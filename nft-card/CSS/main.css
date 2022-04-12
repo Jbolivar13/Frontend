@@ -1,0 +1,113 @@
+body{
+    margin: 0px;
+    background-color: #0C1731;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h4{
+    color: #ffff;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+
+
+/* Tarjeta */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 20px 10px 20px 10px;
+    width: 20%;
+    height: 50%;
+    border-radius: 10px;
+    margin: 100px 550px 100px 550px;
+    background-color: #1A2A4E;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgb(245, 86, 86);
+}
+
+.card span {
+    color: #ffff;
+}
+
+.icon {
+   display: grid;
+   grid-template-columns: 150px 1fr;
+   margin-left: 10px;
+   
+}
+
+.icon p{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;  
+}
+
+.icon img{
+    width: auto;
+    position: relative;
+    vertical-align: middle;
+}
+
+
+/* Creator */
+.creator {
+    margin: 10px auto auto 10px;
+}
+
+.creator img{
+    width: 20%;
+    position: relative;
+    vertical-align: middle;
+}
+
+.creator p{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+
+/* Container */
+.container {
+    padding: 2px;
+}
+
+.container h4 {
+    text-align: center;
+    margin-bottom: 2px;
+}
+.container p{
+    text-align: center;
+    color: #ADC0EC;
+}
+
+/* Image */
+img {
+    border-radius: 10px;
+    width: 100%;  
+}
+
+.center {
+    display: block;
+    margin-right: auto;  
+    margin-left: auto;
+
+}
+
+/*Linea */
+.line-1 {
+    height: 1px;
+    background: black;
+  }
+
+/* Footer */
+.attribution {
+    font-size: 15px;
+    color: #ffff;
+}
