@@ -1,0 +1,265 @@
+/* General */
+body {
+    font-family: 'Arima Madurai', cursive;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+
+p {
+    color: #C1C1C1;
+    font-size: 15px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+
+/* Botones */
+
+.ios {
+    background-color: #31AD8B;
+    padding: 12px 30px;
+    color: #ffff;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+}
+
+.mac {
+    background-color: #5D44FE;
+    padding: 12px 30px;
+    color: #ffff;
+    border-radius: 20px;
+    border: none;
+}
+
+.ios:hover {
+    background-color: #368671;
+    cursor: pointer;
+    transition: calc(0.5s);
+}
+
+.mac:hover{
+    background-color: #4b39c4;
+    cursor: pointer;
+    transition: calc(0.5s);
+}
+
+/* header */
+
+.heaf {
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.imag{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    width: 100px;  
+}
+
+.header h2{
+    font-size: 35px;
+    margin-bottom: auto;
+}
+
+.header {
+   text-align: center;
+}
+
+
+/* Body */
+
+/* primera seaccion */
+.intro {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+
+.section {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+
+.section img{
+    width: 100%;
+    margin: -40px;
+}
+
+.info {
+    text-align: left;
+    margin-left: 50px;
+}
+
+@media (max-width:650px){
+    .section{
+        display: grid;
+        grid-template-columns: none;
+    }
+
+    .section img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        align-items: center;
+    }
+
+    .info{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+/* Segunda seccion */
+
+.post_intro{
+    text-align: center;
+}
+
+.post_intro img {
+    width: 50%;
+    margin-top: 40px;
+}
+
+
+/* Tercera Seccion */
+
+.empresas{
+    text-align: center;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+    padding: 0px 150px 0px 150px;
+}
+
+.icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.emp_logos{
+    margin-top: 100px;
+}
+
+.logos{
+    padding: 40px;
+}
+
+@media(max-width:650px){
+    .icons{
+        grid-template-columns: none;
+        text-align: center;
+        padding: 35px;
+    }
+}
+
+/* Cuarta Seccion */
+
+.devices{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+/* Footer */
+
+.footer{
+    margin-top: 100px;
+    padding: 50px;
+    background-color: rgb(245, 244, 244);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.links img{
+    width: 50px;
+}
+
+.links{
+    margin-left: 100px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(68, 67, 67);
+    padding: 10px;
+}
+
+/*nav*/
+.nav{
+    float: right; 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.nav a{
+    padding: 10px 30px 10px 30px;
+}
+
+.redes img{
+    width: 30px;
+    padding: 10px;
+}
+
+.redes{
+    text-align: right;
+    margin-right: 100px;
+}
+
+@media(max-width:650px){
+    .footer{
+        grid-template-columns: none;
+    }
+    .nav{
+        display: grid;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: none;
+        text-align: center;
+        float: none;
+        margin: 20px 0 20px 0;
+    }
+
+    .links{
+        text-align: center;
+        margin: 0;
+    }
+
+    .redes{
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    .redes img {
+        padding: 20px;
+    }
+}
