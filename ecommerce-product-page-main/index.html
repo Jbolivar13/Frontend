@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./CSS/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+
+  <div class="header">
+    <div class="nav">  
+    <ion-icon name="menu-outline" onclick="openhmbg"></ion-icon> 
+    <img src="/images/logo.svg" alt="logo">    
+      <nav id="navegacion">
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+   
+    <div class="avatar">
+      <div class="carrito">
+        <button type="button" data-toggle="dropdown" class="carr"><img src="./images/icon-cart.svg" alt="cart"></button>
+      </div> 
+      <img src="./images/image-avatar.png" alt="Avatar" class="person">
+    </div>
+  </div>
+  <div class="line"></div>
+ 
+  <div class="container">
+    
+    <div class="imagenes">
+      <img src="./images/image-product-1.jpg" alt="imagen1" class="imagen1" id="imagen_base">
+      <div class="views">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="view1" onclick="openModal();currentSlide(1)" onmouseover="cambio1();" id="vistaA">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="view2" onclick="openModal();currentSlide(2)" onmouseover="cambio2();" id="vistaB">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="view3" onclick="openModal();currentSlide(3)" onmouseover="cambio3();" id="vistaC">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="view4" onclick="openModal();currentSlide(4)" onmouseover="cambio4();" id="vistaD">
+      </div>
+    </div>
+
+    <div class="info">
+      <h4>Sneaker Company</h4>
+      <h1>Fall Limited Edition</br> Sneakers</h1>
+
+      <p class="desc">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+      <div class="precio">
+        <div class="descuento">
+          <h3>$125.00</h3>
+          <p>50%</p>
+        </div>
+          <h5 style="text-decoration:line-through;">$250.00</h5>
+      </div>
+
+      <div class="botones">
+
+        <form id="forma">
+          <div class="btn_sr">
+              <button id="decrementar" class="resta" onclick="decrementar()"><img src="./images/icon-minus.svg" alt="menos"></button>
+              <input type="text" id="contador" value="0" class="contador">
+              <button id="incrementar" class="suma" onclick="incrementar()"><img src="./images/icon-plus.svg" alt="mas"></button>
+          </div>     
+        </form>
+
+        <div class="btn_cart">
+          <button id="cart" class="cart"><ion-icon name="cart-outline" class="car"></ion-icon> Add to cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="slides">
+        <div class="mySlides">
+          <img src="images/image-product-1.jpg" style="width: 30%; border-radius: 10px;">
+        </div>
+  
+        <div class="mySlides">
+          <img src="images/image-product-2.jpg" style="width: 30%; border-radius: 10px;">
+        </div>
+  
+        <div class="mySlides">
+          <img src="images/image-product-3.jpg" style="width: 30%; border-radius: 10px;">
+        </div>
+  
+        <div class="mySlides">
+          <img src="images/image-product-4.jpg" style="width: 30%; border-radius: 10px;">
+        </div>
+  
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+
+      <!-- Thumbnail image controls -->
+      <div class="views">
+        <div class="column">
+          <img src="images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)" alt="view1">
+        </div>
+  
+        <div class="column">
+          <img src="images/image-product-2-thumbnail.jpg" onclick="currentSlide(2)" alt="viw2">
+        </div>
+  
+        <div class="column">
+          <img src="images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)" alt="view3">
+        </div>
+  
+        <div class="column">
+          <img src="images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)" alt="view44">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Juan Bolivar</a>.
+  </div>
+  
+  <script src="./JS/botones.js"></script>
+  <script src="./JS/lightbox.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
