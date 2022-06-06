@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./CSS/main.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="body_destination">
+
+<header>
+  <div class="header">
+    <img src="./assets/shared/logo.svg" alt="logo">  
+    <div class="nav">
+      <div class="line"></div>
+      <nav>
+        <a href="index.html"><span>00</span> Home</a> 
+        <a href="destination.html"><span>01</span> Destination</a> 
+        <a href="crew.html"><span>02</span> Crew</a>
+        <a href="technology.html"><span>03</span> Technology</a>
+      </nav>
+    </div>      
+  </div>
+</header>
+
+  <div class="container_destination">
+    <div class="planet">
+      <h2 style="opacity: 0.9;"><span>01</span> Pick your destination</h2>
+      <img src="./assets/destination/image-moon.png" alt="moon" id="imagen">
+    </div>
+    
+    <div class="info_planet" id="info_planet">
+      <div class="nav_planet">
+        <button id="moon" style="font-weight: lighter; border-bottom: 2px solid white; opacity: 0.9;" onclick="change0()">Moon</button>
+        <button id="mars" style="font-weight: lighter; opacity: 0.9;" onclick="change1()">Mars</button>
+        <button id="europa" style="font-weight: lighter; opacity: 0.9;" onclick="change2()">Europa</button>
+        <button id="titan" style="font-weight: lighter; opacity: 0.9;" onclick="change3()">Titan</button>
+      </div>
+
+      <div class="description_planet">
+        <h1 id="planet">Moon</h1>
+        <p id="text" style="opacity: 0.9;">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+          regain perspective and come back refreshed. While you’re there, take in some history 
+          by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        <div class="line_planet"></div>
+        <div class="distance">
+          <div class="dist">
+            <h4 style="opacity: 0.9;">Avg. distance</h4>
+            <h3 id="km" style="opacity: 0.9;">384,400 km</h3>
+          </div>
+          
+          <div class="dist">
+            <h4 style="opacity: 0.9;">Est. travel time</h4>
+            <h3 id="day" style="opacity: 0.9;">3 days</h3>
+          </div>  
+        </div>
+      </div>
+    </div> 
+    
+  </div>
+ 
+  <script src="./main.js"></script>
+</body>
+</html>
